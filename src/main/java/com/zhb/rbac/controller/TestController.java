@@ -1,7 +1,13 @@
 package com.zhb.rbac.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class TestController {
-    public static void main(String[] args) {
-        System.out.println("测试推送两个仓库");
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello";
     }
 }
